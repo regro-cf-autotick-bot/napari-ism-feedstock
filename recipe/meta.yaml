@@ -1,5 +1,5 @@
 {% set name = "napari-ism" %}
-{% set version = "0.1.1" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-ISM-{{ version }}.tar.gz
-  sha256: d1212c01004e110d077f7e168b87e05aa691cabffa3c02b3b8f4ea6f46424ba2
+  sha256: 8828e433bced020f1bc5fe2e91a433b9c90658df279a2267b00dd146237159e7
 
 build:
   noarch: python

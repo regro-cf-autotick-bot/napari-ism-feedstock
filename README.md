@@ -1,11 +1,11 @@
-About napari-ism
-================
+About napari-ism-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-ism-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/VicidominiLab/napari-ISM
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-ism-feedstock/blob/main/LICENSE.txt)
 
 Summary: It performs Adaptive Pixel Reassignment.
 

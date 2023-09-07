@@ -24,6 +24,7 @@ requirements:
     - brighteyes-ism>=1.2.2
     - h5py
     - magicgui
+    - matplotlib-base
     - napari
     - napari-plugin-engine
     - numpy

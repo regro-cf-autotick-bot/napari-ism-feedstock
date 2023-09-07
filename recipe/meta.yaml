@@ -21,7 +21,7 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - brighteyes-ism>=1.2.2
+    - brighteyes-ism >=1.2.2
     - h5py
     - magicgui
     - matplotlib-base

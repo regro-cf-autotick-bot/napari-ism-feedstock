@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-ISM-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari-ISM-{{ version }}.tar.gz
   sha256: 299516bdeeffb4fd7903c3e76820a7bfd4569a69a54060314f50eaec7ca545ef
   patches:
     - qtpy.patch
@@ -14,12 +14,12 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - brighteyes-ism >=1.2.2
     - h5py
@@ -28,7 +28,7 @@ requirements:
     - napari
     - napari-plugin-engine
     - numpy
-    - python >=3.8
+    - python >={{ python_min }}
     - qtpy
     - scipy
 
@@ -40,6 +40,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/napari-ISM
